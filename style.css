@@ -204,6 +204,16 @@ button {
   border: solid white 1px;
 }
 
+.fa-arrow-down:hover {
+  background-color: hsl(19, 46%, 64%);
+  border: var(--primary-color) 1px solid;
+  color: white;
+}
+
+.fa-arrow-down:active {
+  transform: scale(1.05);
+}
+
 /* "Learn more" section with images */
 .introduction-h2,
 .learn-more,
