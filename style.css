@@ -1,0 +1,392 @@
+/* font-family: 'Lato', sans-serif;
+   font-family: 'Oswald', sans-serif; */
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+:root {
+  font-family: "Lato", sans-serif;
+  --font-headlines: "Oswald", sans-serif;
+  --primary-color: #e9d0c4;
+  font-size: calc(1em + 1vw);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-headlines);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 10px black;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  /* text-shadow: 2px 2px 2px #333; */
+  margin-top: 1em;
+}
+
+.special-h2 {
+  margin: 1em auto;
+  margin-left: 0.5em;
+  /* text-shadow: 3px 3px 7px black; */
+  font-size: 2.5rem;
+}
+
+.very-special-h2 {
+  /* text-shadow: 3px 3px 7px black;*/
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.very-special-h2:nth-of-type(2) {
+  margin-top: 0.5em;
+}
+
+.lead {
+  font-size: larger;
+  color: white;
+  text-shadow: 3px 3px 7px black;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*** LAYOUT ***/
+
+/* backgrounds */
+
+.hero {
+  background-image: url("images/hero-webdeveloper-on-yoga-mat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-image: linear-gradient(
+    to right,
+    hsla(192, 34%, 71%, 100%),
+    hsla(192, 34%, 71%, 70%)
+  );
+}
+
+/* HERO SECTION */
+
+.hero-content {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+
+.box-buttons {
+  align-items: center;
+}
+
+button {
+  font-size: smaller;
+  border-radius: 3em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  font-weight: 900;
+  text-shadow: 0px 0px 5px #333;
+  box-shadow: 1px 1px 10px black;
+}
+
+.filled a {
+  padding: 1em 2.2em;
+  background-color: var(--primary-color);
+  border-radius: 3em;
+  text-decoration: none;
+  color: white;
+  border: var(--primary-color) 1px solid;
+}
+
+.empty {
+  background-color: transparent;
+  border: var(--primary-color) 2px solid;
+  padding: 0.7em 0;
+}
+
+.empty a {
+  padding: 0em 2.8em;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.empty:hover a {
+  color: white;
+}
+
+.empty:hover {
+  background-color: var(--primary-color);
+}
+
+.empty:active {
+  transform: scale(1.05);
+}
+
+.filled:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+.filled a:hover {
+  background-color: hsl(19, 46%, 64%);
+  border: var(--primary-color) 1px solid;
+  color: white;
+}
+
+.filled:active {
+  transform: scale(1.05);
+}
+
+.scroll-down {
+  display: flex;
+}
+
+.scroll-down a {
+  margin-top: 2em;
+  margin-right: 5em;
+  margin-left: auto;
+}
+
+.weekly-inspirations .scroll-down a {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.you-tube .scroll-down a {
+  margin-top: 0em;
+  margin-right: 2em;
+}
+
+.testimonials .scroll-down a {
+  margin-top: 0em;
+  margin-right: 3em;
+}
+
+.fa-arrow-down {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 100%;
+  padding: 0.4em;
+  font-size: 1.5rem;
+  border: solid white 1px;
+}
+
+/* "Learn more" section with images */
+.introduction-h2,
+.learn-more,
+.weekly-inspirations,
+.subscribe-form,
+.you-tube,
+.testimonials {
+  padding: 1em;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.learn-more img {
+  border: 1px solid #b6dae2;
+  /* box-shadow: 2px 2px 7px #333; */
+}
+
+/* "Weekly inspirations" section with icons */
+
+.icon-box {
+  text-align: center;
+  margin: 1em auto !important;
+}
+.icon-box img {
+  width: 50%;
+  height: auto;
+}
+
+.icon-box p {
+  line-height: 1.7;
+}
+
+.icon-box h3 {
+  margin-top: 1em;
+}
+
+/* section "YouTube" */
+
+.you-tube-movie {
+  display: flex;
+  justify-content: center;
+}
+
+.you-tube-movie i-frame {
+  max-width: 100%;
+}
+
+iframe {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+/* Form */
+
+form p input {
+  margin: 0.5em auto;
+}
+
+.submit {
+  margin-top: 1em;
+  width: 100%;
+  color: hsla(192, 34%, 51%, 100%);
+  background-color: var(--primary-color);
+  /*background-image: linear-gradient(to bottom, var(--primary-color), #fff6ea); */
+  box-shadow: 1px 1px 5px #333;
+  text-shadow: none;
+  border: none;
+  padding: 0.7em;
+}
+
+.submit a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px #333;
+}
+
+.submit:hover {
+  background-color: hsl(19, 46%, 64%);
+  border: var(--primary-color) 1px solid;
+  color: white;
+}
+
+.submit:active {
+  transform: scale(1.1);
+}
+
+input {
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 0.5em;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 678px) {
+}
+
+@media (min-width: 678px) {
+  .very-special-h2 {
+    margin-left: 1em;
+  }
+  .learn-more,
+  .weekly-inspirations,
+  .subscribe-form {
+    padding: 2em 3em;
+  }
+  .learn-more {
+    padding-top: 0;
+  }
+  .info-box {
+    padding-top: 2em;
+  }
+
+  .info-box img {
+    /*box-shadow: 10px 10px hsl(180, 9%, 47%);*/
+  }
+
+  .info-box-image {
+    padding: 1em 5em 0;
+  }
+
+  .you-tube-text,
+  .you-tube-movie {
+    padding: 2em;
+  }
+
+  .you-tube h2 {
+    margin-left: 0.8em !important;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    .very-special-h2 {
+      margin-left: 2em;
+    }
+    font-size: calc(1em + 0.5vw);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .lead {
+    font-size: xx-large;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .special-h2 {
+    text-align: center;
+  }
+
+  .info-box:nth-child(2) {
+    margin-left: -5em;
+    width: 100%;
+  }
+
+  .info-box-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .you-tube-movie {
+    align-items: center;
+  }
+
+  form {
+    width: 60%;
+    margin: 4em auto;
+  }
+
+  .submit {
+    width: auto;
+    margin: 1em auto;
+    display: block;
+  }
+
+  .submit a {
+    padding: 0.7em 4em;
+  }
+}
