@@ -97,7 +97,7 @@ main {
   background-image: linear-gradient(
     to right,
     hsla(192, 34%, 71%, 100%),
-    hsla(192, 34%, 71%, 70%)
+    hsla(192, 34%, 71%, 50%)
   );
 }
 
