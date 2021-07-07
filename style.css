@@ -175,9 +175,12 @@ button {
 }
 
 .scroll-down a {
-  margin-top: 2em;
-  margin-right: 5em;
   margin-left: auto;
+}
+
+.learn-more .scroll-down a {
+  margin-top: 2em;
+  margin-right: 1em;
 }
 
 .weekly-inspirations .scroll-down a {
@@ -186,13 +189,13 @@ button {
 }
 
 .you-tube .scroll-down a {
-  margin-top: 0em;
-  margin-right: 2em;
+  margin-top: 2em;
+  margin-right: 1em;
 }
 
 .testimonials .scroll-down a {
   margin-top: 0em;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
 .fa-arrow-down {
@@ -310,9 +313,6 @@ input {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 678px) {
-}
-
 @media (min-width: 678px) {
   .very-special-h2 {
     margin-left: 1em;
@@ -344,6 +344,25 @@ input {
 
   .you-tube h2 {
     margin-left: 0.8em !important;
+  }
+  .learn-more .scroll-down a {
+    margin-top: 2em;
+    margin-right: 5em;
+  }
+
+  .weekly-inspirations .scroll-down a {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+
+  .you-tube .scroll-down a {
+    margin-top: 0em;
+    margin-right: 2em;
+  }
+
+  .testimonials .scroll-down a {
+    margin-top: 0em;
+    margin-right: 3em;
   }
 }
 
