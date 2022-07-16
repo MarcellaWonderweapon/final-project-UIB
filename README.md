@@ -1,4 +1,4 @@
-# The healthy Web Developer
+# 🧘‍♀️ The healthy Web Developer
 
 **Technologies used**: HTML, CSS <br>
 **Objective**: Creating a landing page for developers, who desire to improve their health, happiness and wellbeing
